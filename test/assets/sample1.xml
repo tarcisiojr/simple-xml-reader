@@ -1,0 +1,9 @@
+<xml>
+    <child id="1">
+        yeh!
+    </child>
+
+    <child xpto="foo">
+        <value>1</value>
+    </child>
+</xml>
