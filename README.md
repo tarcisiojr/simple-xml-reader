@@ -41,7 +41,7 @@ The each xml tag readed, the transform stream will generate a JavaScript object 
     "name": "node name",
     "attrs": { node attributes },
     "text": { node text },
-    "children": [{ children nodes ,,,}]
+    "children": [{ children nodes } ...]
   }
 ```
 If you have a very large XML file with many nodes and do not need the relationship between them, you can modify the object created after creation to remove the relationship between the child and parent nodes. This strategy is useful for avoiding excessive memory consumption. See the example below that removes the links between the nodes:
