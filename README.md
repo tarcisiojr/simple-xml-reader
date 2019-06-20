@@ -35,7 +35,7 @@ fs.createReadStream('path to xml file'))
 
 The each xml tag readed, the transform stream will generate a JavaScript object to represent it. The created object has the following structure:
 
-```json
+```
 {
     "parent": {...},
     "name": "node name",
