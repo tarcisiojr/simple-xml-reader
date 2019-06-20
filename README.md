@@ -1,5 +1,5 @@
 # simple-xml-reader
-A utility to read xml file throuth NodeJS Stream.
+A utility to read xml files through NodeJS Stream.
 
 # Instalation
 
@@ -33,7 +33,8 @@ fs.createReadStream('path to xml file'))
 
 # Caution
 
-The xmlParse funcion will create a Tranform stream and as soon a xml node finishes is fully readed a object is created and sent thought the stream. The createds object has the flollowing scructure:
+The each xml tag readed, the transform stream will generate a JavaScript object to represent it. The created object has the following structure:
+
 ```json
 {
     "parent": {...},
@@ -43,7 +44,7 @@ The xmlParse funcion will create a Tranform stream and as soon a xml node finish
     "children": [{ children nodes ,,,}]
   }
 ```
-If you have a huge XML with many nodes and you don't need the relationsheep beetween then, you can transform the creted element after the creation. With this strategy is useful to avoid too memory consuption, when you must have a huge elements. See de example:
+If you have a very large XML file with many nodes and do not need the relationship between them, you can modify the object created after creation to remove the relationship between the child and parent nodes. This strategy is useful for avoiding excessive memory consumption. See the example below that removes the links between the nodes:
 
 ```javascript
 ...
