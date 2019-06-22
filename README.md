@@ -1,6 +1,8 @@
 # simple-xml-reader
 A utility to read xml files through NodeJS Stream.
 
+[![Build Status](https://travis-ci.org/tarcisiojr/simple-xml-reader.svg?branch=master)](https://travis-ci.org/tarcisiojr/simple-xml-reader)
+
 # Instalation
 
 ```
