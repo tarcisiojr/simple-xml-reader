@@ -14,7 +14,7 @@ npm i simple-xml-reader --save
 ```javascript
 const { Writable } = require('stream')
 const fs = require('fs')
-const xmlParser = require('simple-xml-reader')
+const { xmlParser } = require('simple-xml-reader')
 
 const write = (fn) => {
   return new Writable({
