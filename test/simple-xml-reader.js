@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const xmlParser = require('../src/')
+const { xmlParser } = require('../src/')
 const expect = require('chai').expect
 const fs = require('fs')
 const path = require('path')

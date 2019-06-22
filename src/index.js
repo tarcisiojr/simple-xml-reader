@@ -55,4 +55,4 @@ const xmlParser = (opts) => {
   return stream
 }
 
-module.exports = xmlParser
+module.exports = { xmlParser }

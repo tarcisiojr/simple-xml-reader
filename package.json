@@ -1,6 +1,6 @@
 {
   "name": "simple-xml-reader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility for load xml files with stream",
   "main": "src/index.js",
   "scripts": {
